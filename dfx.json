@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "canisters": {
+    "ic_grpc_backend": {
+      "type": "rust",
+      "package": "ic_grpc_backend",
+      "candid": "src/ic_grpc_backend/ic_grpc_backend.did"
+    },
+    "ic_grpc_frontend": {
+      "type": "assets",
+      "source": [
+        "src/ic_grpc_frontend/assets"
+      ],
+      "dependencies": [
+        "ic_grpc_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "output_env_file": ".env"
+}

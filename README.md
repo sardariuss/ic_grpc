@@ -1,7 +1,7 @@
 # ic_grpc
 
-This project attempt to be a "hello world" canister that implements grpc (protocol buffers).
-Right now the example works with JSON / RPC !
+This project attempt to be a "hello world" canister that implements grpc (protocol buffers), as a pre-requisite to implement a watchtower on the IC for https://forum.dfinity.org/t/open-bnt-10-all-along-the-ic-watchtower/21770
+Watchout, right now the example works with JSON / RPC, not GRPC.
 
 Once deployed, you can call the http_request in command line (replace b77ix-eeaaa-aaaaa-qaada-cai by the canister_id from your local env):
 ```
@@ -37,7 +37,7 @@ lightningd --testnet --bitcoin-rpcuser=user --bitcoin-rpcpassword=whatever
 teosd --btcrpcuser=user --btcrpcpassword=whatever --btcnetwork=testnet
 ```
 
-Note that the teosd plugin shall be added to the bitcoind plugin, see teos documentation
+Note that the teosd plugin shall be added to the bitcoind plugin, see teos documentation.
 
 ## Links
 teos watchtower: https://github.com/talaia-labs/rust-teos/tree/master
